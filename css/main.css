@@ -1,0 +1,89 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #bae6af;
+    overflow: auto;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    border-radius: 3px;    
+    color: #212529;
+    text-align: center;
+    padding: 14px 0px;
+    width: 16.66667%;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #feffd2;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #4f7446;
+    color: #ffffff;
+  }
+  
+  /* Hide the icon that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Style for page content */
+  .content {
+    padding: 14px;
+    font-size: 22px;
+  }
+  
+  /* When the screen is less than 800 pixels wide */
+  @media screen and (max-width: 800px) {
+    /* Hide all links, except for the selected tab */
+    .topnav a:not(.active) {
+      display: none;
+    }
+
+    .topnav a.active {
+        float: left;
+        display: block;
+        width: 85%;
+      }
+  
+    /* Show the icon that should open and close the topnav */
+    .topnav a.icon {
+      float: right;
+      display: block;
+      width: 15%;
+    }
+  }
+  
+  /* When the screen is less than 800 pixels wide, if the user clicks on the icon */
+  /* the "responsive" class attribute will be added to the topnav by the JavaScript code */
+  /* This media query sets the style for the unfolded topnav */
+  /* It makes the topnav look good on small screens (display the links vertically instead of horizontally)  */
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {
+      position: relative;
+      width: 100%;
+    }
+  
+    .topnav.responsive a.icon {
+      position: absolute;
+      display: inline;
+      float:right;
+      text-align: center;
+      width: 15%;
+    }
+
+    .topnav.responsive a {
+      float: left;
+      display: block;
+      text-align: center;
+      width: 85%;
+    }
+  }
