@@ -5,6 +5,9 @@
 
         <title>OpenStreetMap: About</title>
         
+        <!-- icon -->
+        <link rel="icon" type="image/x-icon" href="img/Openstreetmap_logo.svg">
+
         <!-- css -->
         <link rel="stylesheet" href="css/main.css">
         
@@ -30,13 +33,13 @@
 
         <!-- content -->
         <div class="content">
-            <div class="row">
+            <div class="row-about">
                 <div class="col-about-1">
                     <div class="card-about">
                         <div class="card-body">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Openstreetmap_logo.svg" 
+                            <img src="img/Openstreetmap_logo.svg" 
                                 alt="OpenStreetMap logo"
-                                style="width: auto; height: 100%;" >
+                                style="width: 100%; height: auto;" >
                         </div>
                     </div>
                 </div>
@@ -45,47 +48,63 @@
                     <div class="card-about">
                         <div class="card-body">
                             <p>
-                                <span style="color:#bae6af"> OpenStreetMap </span> provides map data for thousands of websites, mobile apps, and hardware devices
+                                <span style="color:#bae6af"> <strong> OpenStreetMap </strong> </span> provides map data for thousands of websites, mobile apps, and hardware devices
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <iframe width="100%" height="200px" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-122.36692428588869%2C47.66983803354667%2C-122.31903076171876%2C47.68653913815224&amp;layer=mapnik"
+                style="border: 1px solid rgb(120, 153, 98)">
+            </iframe>
+            
+            <br/>
+            
+            <small><a href="https://www.openstreetmap.org/#map=15/47.6782/-122.3430">View Larger Map</a></small>
             
             <p>
                 OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, 
                 trails, cafés, railway stations, and much more, all over the world.
             </p>
+            
+            <button class="accordion"><h3> Local Knowledge </h3></button>
+                <div class="panel">
+                    <p>
+                        OpenStreetMap emphasizes local knowledge. Contributors use aerial imagery, GPS devices, and low-tech field maps to verify that OSM is accurate and up to date.
+                    </p>
+                </div>
 
-            <h3> Local Knowledge </h3>
-            <p>
-                OpenStreetMap emphasizes local knowledge. Contributors use aerial imagery, GPS devices, and low-tech field maps to verify that OSM is accurate and up to date.
-            </p>
+            <button class="accordion"><h3> Community Driven  </h3></button>
+                <div class="panel">
+                    <p>
+                        OpenStreetMap's community is diverse, passionate, and growing every day.
+                        Our contributors include enthusiast mappers, GIS professionals, engineers
+                        running the OSM servers, humanitarians mapping disaster-affected areas,
+                        and many more.
+                        To learn more about the community, see the <a href="https://blog.openstreetmap.org">OpenStreetMap Blog</a>,
+                        <a href="/diary">user diaries</a>, <a href="https://blogs.openstreetmap.org/">community blogs</a>, and the
+                        <a href="https://www.osmfoundation.org/">OSM Foundation</a> website.
+                    </p>
+                </div>
 
-            <h3> Community Driven  </h3>
-            <p>
-                OpenStreetMap's community is diverse, passionate, and growing every day.
-                Our contributors include enthusiast mappers, GIS professionals, engineers
-                running the OSM servers, humanitarians mapping disaster-affected areas,
-                and many more.
-                To learn more about the community, see the <a href="https://blog.openstreetmap.org">OpenStreetMap Blog</a>,
-                <a href="/diary">user diaries</a>, <a href="https://blogs.openstreetmap.org/">community blogs</a>, and the
-                <a href="https://www.osmfoundation.org/">OSM Foundation</a> website.
-            </p>
+            <button class="accordion"><h3> Legal </h3></button>
+                <div class="panel">
+                    <p>
+                        OpenStreetMap is <i>open data</i>: you are free to use it for any purpose
+                    as long as you credit OpenStreetMap and its contributors. If you alter or
+                    build upon the data in certain ways, you may distribute the result only
+                    under the same licence. See the <a href="/copyright">Copyright and License page</a> for details.
+                    </p>
+                </div>
 
-            <h3> Legal </h3>
-            <p>
-                OpenStreetMap is <i>open data</i>: you are free to use it for any purpose
-            as long as you credit OpenStreetMap and its contributors. If you alter or
-            build upon the data in certain ways, you may distribute the result only
-            under the same licence. See the <a href="/copyright">Copyright and License page</a> for details.
-            </p>
-
-
-            <h3> Partners </h3>
-            <p>
-                Hosting is supported by <a href="https://www.ucl.ac.uk">UCL</a>, <a href="https://www.fastly.com/">Fastly</a>, <a href="https://www.bytemark.co.uk">Bytemark Hosting</a>, and other <a href="https://hardware.openstreetmap.org/thanks/">partners</a>.
-            </p>
+            <button class="accordion"><h3> Partners </h3></button>
+                <div class="panel">
+                    <p>
+                        Hosting is supported by <a href="https://www.ucl.ac.uk">UCL</a>, <a href="https://www.fastly.com/">Fastly</a>, <a href="https://www.bytemark.co.uk">Bytemark Hosting</a>, and other <a href="https://hardware.openstreetmap.org/thanks/">partners</a>.
+                    </p>
+                </div>
 
         </div>
         
