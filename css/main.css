@@ -123,14 +123,31 @@
   .col-about-1 .card-about {
     text-align: center;   
   }
+  
+  .button-link a {
+    background-color: #4f7446;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 
+  .button-link a:hover{
+    background-color: #feffd2;
+    color: black;
+  }
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 16px;
+    padding: 12px 16px;
     width: 100%;
     text-align: left;
     border: none;
